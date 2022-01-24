@@ -1,7 +1,7 @@
 <script>
     import * as pc from 'playcanvas';
     import { onMount } from 'svelte';
-    import Pcuibutton from './components/pcuibutton.svelte'
+    
 
 
     

@@ -1,0 +1,13 @@
+<svg width="300px" height="400px" viewBox="0 0 300 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+  <circle fill="green" stroke="#aaa" cx="78.5" cy="264.5" r="10.5">
+  </circle>
+  <circle fill="green" stroke="#aaa" cx="203.5" cy="144.5" r="20.5">
+  </circle>
+  <path stroke="#aaa" fill="green" d="M 88 257 Z">
+  </path>
+  <polyline stroke="#aaa" fill="green" points="26,25 26,20 64,23 65,305 192,191">
+  </polyline>
+  <polyline stroke="#aaa" fill="green" points="257,115 231,106 237,130 230,157 257,168">
+  </polyline>
+</svg>
