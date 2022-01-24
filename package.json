@@ -16,6 +16,8 @@
   },
   "type": "module",
   "dependencies": {
-    "playcanvas": "^1.51.4"
+    "playcanvas": "^1.51.4",
+    "svelte-cubed": "^0.2.1",
+    "svelte-trois": "^0.0.1"
   }
 }
