@@ -104,7 +104,7 @@
 <!-- <canvas id='application' width="300px" height="300px"></canvas> -->
 <div class="">test 2 //</div>
 <div>
-    <img src="logoSTS_01.svg" width="300" height="300" alt=""/>
+   <!--  <img src="logoSTS_01.svg" width="300" height="300" alt=""/> -->
     
 </div>
 <div>
