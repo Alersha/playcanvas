@@ -87,6 +87,8 @@
     }) 
 </script>
 
+<div>accordion <a href="/components/accordion">accordion</a></div>
+
 <div class="">Test 1 - <a href="/playtest/playtest01">here</a></div>
 
 <div class="">Test 2 - <a href="/playtest/playtest02">add html label to 3d</a></div>
@@ -101,8 +103,21 @@
 <div class="">Test 11 - <a href="/playtest/playtest11">other mouse event</a></div>
 <div class="">Test 12 - <a href="/playtest/playtest12">simple test</a></div>
 <div class="">Test 13 - <a href="/playtest/playtest13">obj loader</a></div>
+<div class="">+++++++++++++++++++++++++++++++++++++++++</div>
+<div class="">Test Assets - <a href="/assets/assets01">Assets</a></div>
+<div class="">Test Assets 02 - <a href="/assets/assets02">Assets 02</a></div>
 <!-- <canvas id='application' width="300px" height="300px"></canvas> -->
-<div class="">test 2 //</div>
+    <div class="m-3">
+        <p>serios of test project 2
+
+        </p>
+
+<div class="">proba 01 <a href="/proba/proba01">table</a></div>
+<div class="">proba 02 <a href="/proba/proba02">trois</a></div>
+<div class="">proba 03 <a href="/proba/proba03">svelte-particles</a></div>
+<div class="">proba 04 <a href="/proba/proba04">tsparticles</a></div>
+
+    </div>
 <div>
    <!--  <img src="logoSTS_01.svg" width="300" height="300" alt=""/> -->
     

@@ -14,8 +14,12 @@
   },
   "type": "module",
   "dependencies": {
+    "@hurtigruten/svelte-table": "^2.0.3",
     "playcanvas": "^1.51.4",
     "svelte-cubed": "^0.2.1",
-    "svelte-trois": "^0.0.1"
+    "svelte-particles": "^1.22.0",
+    "svelte-trois": "^0.0.1",
+    "three": "^0.136.0",
+    "tsparticles": "^1.39.0"
   }
 }
