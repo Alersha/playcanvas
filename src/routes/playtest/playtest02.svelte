@@ -96,6 +96,7 @@ var man = {
 };
 
 var canvas = document.getElementById("application-canvas");
+
 var app = new pc.Application(canvas, {});
 app.start();
 app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);

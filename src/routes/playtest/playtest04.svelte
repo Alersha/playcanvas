@@ -1,6 +1,7 @@
 <script>
     import * as pc from 'playcanvas';
     import { onMount } from 'svelte';
+    /* import  '$lib/rotate.js'; */
 
     onMount(() =>{
 
