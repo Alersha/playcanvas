@@ -5,14 +5,20 @@
     let triangle;
     let parallelogram;
     /* let shape; */
+    let mouseX;
+    let mouseY;
+    let eclickX;
+    let eclickY;
+    let offsetX;
+    let offsetY;
     
     onMount(() => {
         
 var ctx = canvas.getContext("2d");
 
 /* var canvasOffset = canvas.offsetTop; */
-var offsetX = canvas.offsetLeft;
-var offsetY = canvas.offsetTop;
+offsetX = canvas.offsetLeft;
+offsetY = canvas.offsetTop;
 /* var offsetX = canvasOffset.left;
 var offsetY = canvasOffset.top; */
 /* var scrollX = canvas.scrollLeft;
@@ -22,6 +28,12 @@ var scrollY = canvas.scrollTop; */
 ctx.fillStyle = "skyblue";
 ctx.strokeStyle = "lightgray";
 ctx.lineWidth = 2;
+
+// Create circle
+const circle = new Path2D();
+circle.arc(350, 75, 50, 0, 2 * Math.PI);
+ctx.fillStyle = 'red';
+ctx.fill(circle);
 
 // create a triangle and parallelogram object
 
@@ -88,13 +100,16 @@ draw(parallelogram);
 
 
 // called when user clicks the mouse
-
+/* var mouseX;
+var mouseY; */
 function handleMouseDown(e) {
     e.preventDefault();
 
     // get the mouse position
-    var mouseX = parseInt(e.clientX - offsetX);
-    var mouseY = parseInt(e.clientY - offsetY);
+     eclickX = e.clientX;
+     eclickY = e.clientY;
+     mouseX = parseInt(e.clientX - offsetX);
+     mouseY = parseInt(e.clientY - offsetY);
 
     // iterate each shape in the shapes array
     for (var i = 0; i < shapes.length; i++) {
@@ -114,6 +129,23 @@ function handleMouseDown(e) {
 // listen for mousedown events
 canvas.addEventListener("click", function (e) {
     handleMouseDown(e);
+
+    
+
+// Listen for mouse moves
+canvas.addEventListener('mousemove', function(event) {
+  // Check whether point is inside circle
+  if (ctx.isPointInPath(circle, event.offsetX, event.offsetY)) {
+    ctx.fillStyle = 'green';
+  }
+  else {
+    ctx.fillStyle = 'red';
+  }
+
+  // Draw circle
+  /* ctx.clearRect(0, 0, canvas.width, canvas.height); */
+  ctx.fill(circle);
+});
     
 });
     })
@@ -123,6 +155,8 @@ canvas.addEventListener("click", function (e) {
 <h4>Click on a shape.</h4>
 <canvas bind:this={canvas}
 
-width={300} height={300}></canvas>
+width={600} height={400}></canvas>
 
 <div id="info"></div>
+<div>X offsetLeft: {offsetX} and Y offsetTop: {offsetY}</div>
+<div>X e.clickX: {eclickX}  and Y e.clickY: {eclickY}</div>
