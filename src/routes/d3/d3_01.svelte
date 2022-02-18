@@ -27,11 +27,11 @@ var scrollY = canvas.scrollTop; */
 // set styles
 ctx.fillStyle = "skyblue";
 ctx.strokeStyle = "blue";
-ctx.lineWidth = 5;
+ctx.lineWidth = 3;
 
 // Create circle
 const circle = new Path2D();
-circle.arc(350, 75, 50, 0, 2 * Math.PI);
+circle.arc(400, 55, 50, 0, 2 * Math.PI);
 ctx.fillStyle = 'red';
 ctx.fill(circle);
 
@@ -56,14 +56,14 @@ parallelogram = {
         x: 120,
         y: 70
     }, {
-        x: 270,
+        x: 170,
         y: 30
     }, {
-        x: 300,
+        x: 200,
         y: 90
     }, {
-        x: 100,
-        y: 100
+        x: 88,
+        y: 70
     }],
     message: "I am a parallelogram"
 }
@@ -119,9 +119,9 @@ function handleMouseDown(e) {
         // test if the mouse is in the current shape
         if (ctx.isPointInPath(mouseX, mouseY)) {
             // if inside, display the shape's message
-            /* console.log(shape.message);
-            ctx.fillStyle = "blue";
-            ctx.fill(shape); */
+            console.log(shape.message); 
+            /* ctx.fillStyle = "blue";
+            ctx.fill(shape); */ 
             
             info.innerHTML = shape.message;
         }
