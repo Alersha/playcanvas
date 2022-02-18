@@ -126,8 +126,7 @@
         <p>D3 data <a href="/d3/d3">test 3d data</a></p>
         <p>D3 data <a href="/d3/d3_01">test click canvas element (clean js)</a></p>
         <p>D3 data <a href="/d3/d3_02">test click canvas element (clean js)</a></p>
-        <p>D3 data <a href="/d3/d3_03">test not SSR</a></p>
-        <p>D3 data <a href="/d3/d3_04">test SSR and script context="module"</a></p>
+        
     </div>
 <div>
    <!--  <img src="logoSTS_01.svg" width="300" height="300" alt=""/> -->
