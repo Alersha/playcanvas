@@ -17,6 +17,8 @@ $: b = a + 1;
 </script>
 
 <div>{a} and {b}</div>
+
+
      
 
      <canvas 
