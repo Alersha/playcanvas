@@ -119,9 +119,9 @@ function handleMouseDown(e) {
         // test if the mouse is in the current shape
         if (ctx.isPointInPath(mouseX, mouseY)) {
             // if inside, display the shape's message
-            console.log(shape.message);
+            /* console.log(shape.message);
             ctx.fillStyle = "blue";
-            ctx.fill(shape);
+            ctx.fill(shape); */
             
             info.innerHTML = shape.message;
         }
