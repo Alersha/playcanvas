@@ -9,21 +9,21 @@
 		ctx.fill(); */
 </script>
 
-<script>
+<!-- <script>
 
     let canvas;
 let a = 1;
 $: b = a + 1;
-</script>
+</script> -->
 
-<div>{a} and {b}</div>
+<!-- <div>{a} and {b}</div> -->
 
 
      
 
-     <canvas 
+     <!-- <canvas 
      bind:this={canvas}
-     id="canvas"></canvas>
+     id="canvas"></canvas> -->
 
 <style>
     canvas {

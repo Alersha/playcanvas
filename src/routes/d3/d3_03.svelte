@@ -3,9 +3,9 @@
 
 	let name = 'world';
 	/* let canvas; */
-	let p = document.createElement('p');
+	/* let p = document.createElement('p');
 	p.innerHTML = 'test';
-	document.body.appendChild(p);
+	document.body.appendChild(p); */
 		onMount(() => {const canvas = document.getElementById('canvas');
 		const ctx = canvas.getContext("2d");
 		ctx.rect(10, 10, 100, 100);
