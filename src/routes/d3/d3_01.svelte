@@ -17,8 +17,8 @@
 var ctx = canvas.getContext("2d");
 
 /* var canvasOffset = canvas.offsetTop; */
-offsetX = canvas.offsetLeft;
-offsetY = canvas.offsetTop;
+/* offsetX = canvas.offsetLeft;
+offsetY = canvas.offsetTop; */
 /* var offsetX = canvasOffset.left;
 var offsetY = canvasOffset.top; */
 /* var scrollX = canvas.scrollLeft;
@@ -26,8 +26,8 @@ var scrollY = canvas.scrollTop; */
 
 // set styles
 ctx.fillStyle = "skyblue";
-ctx.strokeStyle = "lightgray";
-ctx.lineWidth = 2;
+ctx.strokeStyle = "blue";
+ctx.lineWidth = 5;
 
 // Create circle
 const circle = new Path2D();
@@ -39,13 +39,13 @@ ctx.fill(circle);
 
 triangle = {
     points: [{
-        x: 25,
+        x: 15,
         y: 100
     }, {
-        x: 50,
+        x: 70,
         y: 50
     }, {
-        x: 75,
+        x: 55,
         y: 100
     }],
     message: "I am a triangle"
@@ -53,14 +53,14 @@ triangle = {
 
 parallelogram = {
     points: [{
-        x: 150,
-        y: 50
+        x: 120,
+        y: 70
     }, {
-        x: 250,
-        y: 50
+        x: 270,
+        y: 30
     }, {
-        x: 200,
-        y: 100
+        x: 300,
+        y: 90
     }, {
         x: 100,
         y: 100
@@ -103,13 +103,13 @@ draw(parallelogram);
 /* var mouseX;
 var mouseY; */
 function handleMouseDown(e) {
-    e.preventDefault();
-
+    /* e.preventDefault(); */
+    
     // get the mouse position
      eclickX = e.clientX;
      eclickY = e.clientY;
-     mouseX = parseInt(e.clientX - offsetX);
-     mouseY = parseInt(e.clientY - offsetY);
+     mouseX = parseInt(e.offsetX);
+     mouseY = parseInt(e.offsetY);
 
     // iterate each shape in the shapes array
     for (var i = 0; i < shapes.length; i++) {
@@ -120,6 +120,9 @@ function handleMouseDown(e) {
         if (ctx.isPointInPath(mouseX, mouseY)) {
             // if inside, display the shape's message
             console.log(shape.message);
+            ctx.fillStyle = "blue";
+            ctx.fill(shape);
+            
             info.innerHTML = shape.message;
         }
     }
@@ -149,6 +152,7 @@ canvas.addEventListener('mousemove', function(event) {
     
 });
     })
+    
 </script>
 
 
