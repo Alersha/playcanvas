@@ -1,26 +1,8 @@
 <script>
     import * as pc from 'playcanvas';
     import { onMount } from 'svelte';
-    
 
-
-    
-    
-
-    onMount(() => {
-        // create button from pcui
-
-        /* const helloWorldButton = new Button({
-            text: 'Click Me',
-            id: 'buttonid'
-        }); */
-        /* let button01 = document.createElement(helloWorldButton); */
-        /* button01.id = 'button01'; */
-        /* document.body.appendChild(helloWorldButton.dom); */
-        /* button01.innerHTML = 'testbutton'; */
-        
-        
-        
+    onMount(() => {   
         // create a PlayCanvas application
         
         const canvas = document.getElementById('application');
@@ -69,25 +51,16 @@
             box.rotate(10 * dt, 20 * dt, 30 * dt);
             box.setLocalScale(1, Math.abs(Math.sin(timer)), 1);
         
-        }
-        
+        }       
         );
-
         app.start();
+}) 
 
-        /* var obj = new EventHandlerSubclass();
-
-        // subscribe to an event
-        obj.on('hello', function (str) {
-            console.log('event hello is fired', str);
-        });
-
-        // fire event
-        obj.fire('hello', 'world'); */
-    }) 
 </script>
-
+<p>Accordion</p>
 <div>accordion <a href="/components/accordion">accordion</a></div>
+<br />++++++++++++++++++++++++++++++++++++++++++<br />
+<p>PlayCanvas</p>
 
 <div class="">Test 1 - <a href="/playtest/playtest01">here</a></div>
 
@@ -106,6 +79,16 @@
 <div class="">Test 14 - <a href="/playtest/playtest14">mouse testing</a></div>
 <div class="">Test 15 - <a href="/playtest/playtest15">mouse name testing</a></div>
 <div class="">+++++++++++++++++++++++++++++++++++++++++</div>
+<p>SVG testing</p>
+
+<div>Test 01 of SVG - <a href="/svg/svg01">2 points one line</a></div>
+<div>Test 02 of SVG - <a href="/svg/svg02">svg line in canvas 2d</a></div>
+
+
+
+
+<br />+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ <br />
+<p></p>
 <div class="">Test Assets - <a href="/assets/assets01">Assets</a></div>
 <div class="">Test Assets 02 - <a href="/assets/assets02">Assets 02</a></div>
 <!-- <canvas id='application' width="300px" height="300px"></canvas> -->
@@ -129,7 +112,7 @@
         
     </div>
 <div>
-   <!--  <img src="logoSTS_01.svg" width="300" height="300" alt=""/> -->
+    <img src="logoSTS_01.svg" width="300" height="300" alt=""/>
     
 </div>
 

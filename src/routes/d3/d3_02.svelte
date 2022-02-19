@@ -24,6 +24,25 @@
         aa.rect(40, 120, 100, 13);
         ctx.fillStyle = "green";
         ctx.fill(aa);
+
+        /* let p = new Path2D('M10 210 h 80 v 80 h -80 Z');
+        ctx.fillStyle = "gray";
+        ctx.fill(p); */
+        /* let line2 = new Path2D();
+        line2.lineWidth = 5;
+        line2.moveTo(20, 200);
+        line2.lineTo(60, 200);
+        ctx.fill(line2); */
+
+        // set line stroke and line width
+            /* ctx.strokeStyle = 'red';
+            ctx.lineWidth = 5; */
+
+            // draw a red line
+            ctx.beginPath();
+            ctx.moveTo(100, 300);
+            ctx.lineTo(300, 300);
+            ctx.stroke();
         
         // Create circle
             const circle = new Path2D();
@@ -33,20 +52,20 @@
 
             // create line
 
-            let line1 = new Path2D();
+            /* let line1 = new Path2D();
             line1.moveTo(10, 100);
-            line1.lineTo(40, 100);
+            line1.lineTo(40, 100); */
 
 
             /* line1.stroke(); */
 
             // Первый путь
-                ctx.beginPath();
+                /* ctx.beginPath();
                 ctx.strokeStyle = 'blue';
                 ctx.lineWidth = 15;
                 ctx.moveTo(20, 220);
                 ctx.lineTo(200, 220);
-                ctx.stroke(20, 220, 200, 220);
+                ctx.stroke(20, 220, 200, 220); */
 
 });
     

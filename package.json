@@ -16,6 +16,7 @@
   "dependencies": {
     "@hurtigruten/svelte-table": "^2.0.3",
     "ionicons": "^6.0.1",
+    "leader-line": "^1.0.7",
     "playcanvas": "^1.51.4",
     "svelte-cubed": "^0.2.1",
     "svelte-particles": "^1.22.0",
