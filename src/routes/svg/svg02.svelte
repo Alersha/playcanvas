@@ -24,7 +24,7 @@
 
     //////////////PlayCanvas
     const app = new pc.Application(canvas2, {
-            mouse: new pc.Mouse()
+            /* mouse: new pc.Mouse() */
         });
         app.start();
 
@@ -33,6 +33,10 @@
             type: 'box'
         })
         app.root.addChild(box);
+        let boxposx = box.getPosition();
+        console.log(boxposx);
+        let boxposx2 = box.getLocalPosition();
+        console.log(boxposx2);
 
         // create camera entity
         const camera = new pc.Entity('camera');
