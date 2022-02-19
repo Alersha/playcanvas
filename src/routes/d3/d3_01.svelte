@@ -159,8 +159,8 @@ canvas.addEventListener('mousemove', function(event) {
 <h4>Click on a shape.</h4>
 <canvas bind:this={canvas}
 
-width={600} height={400}></canvas>
+width={500} height={300}></canvas>
 
 <div id="info"></div>
-<div>X offsetLeft: {offsetX} and Y offsetTop: {offsetY}</div>
+<div><ion-icon name="add-circle-outline"></ion-icon>X offsetLeft: {offsetX} and Y offsetTop: {offsetY}</div>
 <div>X e.clickX: {eclickX}  and Y e.clickY: {eclickY}</div>
