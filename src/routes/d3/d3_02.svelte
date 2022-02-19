@@ -20,6 +20,10 @@
         ctx.rect(140, 20, 88, 30);
         ctx.fillStyle = "red";
         ctx.fill();
+        let aa = new Path2D();
+        aa.rect(40, 120, 100, 13);
+        ctx.fillStyle = "green";
+        ctx.fill(aa);
         
         // Create circle
             const circle = new Path2D();
@@ -27,6 +31,22 @@
             ctx.fillStyle = 'blue';
             ctx.fill(circle);
 
+            // create line
+
+            let line1 = new Path2D();
+            line1.moveTo(10, 100);
+            line1.lineTo(40, 100);
+
+
+            /* line1.stroke(); */
+
+            // Первый путь
+                ctx.beginPath();
+                ctx.strokeStyle = 'blue';
+                ctx.lineWidth = 15;
+                ctx.moveTo(20, 220);
+                ctx.lineTo(200, 220);
+                ctx.stroke(20, 220, 200, 220);
 
 });
     
