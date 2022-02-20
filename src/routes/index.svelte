@@ -83,6 +83,7 @@
 
 <div>Test 01 of SVG - <a href="/svg/svg01">2 points one line</a></div>
 <div>Test 02 of SVG - <a href="/svg/svg02">svg line in canvas 2d</a></div>
+<div>Test 03 of SVG - <a href="/svg/svg03">get line to animate</a></div>
 
 
 
@@ -106,9 +107,11 @@
 
     </div>
     <div>
-        <p>D3 data <a href="/d3/d3">test 3d data</a></p>
-        <p>D3 data <a href="/d3/d3_01">test click canvas element (clean js)</a></p>
-        <p>D3 data <a href="/d3/d3_02">test click canvas element (clean js)</a></p>
+        <p>D3_00 data <a href="/d3/d3">test 3d data</a></p>
+        <p>D3_01 data <a href="/d3/d3_01">test click canvas element (clean js)</a></p>
+        <p>D3_02 data <a href="/d3/d3_02">test click canvas element (clean js)</a></p>
+        <p>D3_03 data <a href="/d3/d3_03">just line</a></p>
+        <p>D3_04 data <a href="/d3/d3_04">test raschet 2 tochki</a></p>
         
     </div>
 <div>
