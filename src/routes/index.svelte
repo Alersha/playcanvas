@@ -1,60 +1,10 @@
 <script>
-    import * as pc from 'playcanvas';
+    
     import { onMount } from 'svelte';
 
     onMount(() => {   
-        // create a PlayCanvas application
         
-        const canvas = document.getElementById('application');
-        const app = new pc.Application(canvas);
-        // fill the available space at full resolution
-        app.setCanvasFillMode(pc.FILLMODE_NONE, 300, 300);
-        app.setCanvasResolution(pc.RESOLUTION_AUTO);
-
-        // ensure canvas is resized when window changes size
-        window.addEventListener('resize', () => app.resizeCanvas());
-
-        // create box entity
-        const box = new pc.Entity();
-        box.addComponent('model', {
-            type: 'box'
-        });
-        app.root.addChild(box);
-        box.setPosition(-0.4, 0, 0)
-        /* box.translate(-1, 0, 0); */
-
-        // Create cube's material
-            var boxMaterial = new pc.PhongMaterial();
-            boxMaterial.diffuse.set(0, 0.58, 0.86);
-            boxMaterial.update();
-            box.model.model.meshInstances[0].material = boxMaterial;
-            /* box.translate(-2, 0, 0); */
-
-        // create camera entity
-        const camera = new pc.Entity('camera');
-        camera.addComponent('camera', {
-            clearColor: new pc.Color(0.3, 0.7, 0.1)
-        });
-        app.root.addChild(camera);
-        camera.setPosition(0, 0, 3);
-
-        // create directional light entity
-        const light = new pc.Entity('light');
-        light.addComponent('light');
-        app.root.addChild(light);
-        light.setEulerAngles(45, 0, 0);
-        let timer = 0;
-        // rotate the box according to the delta time since the last frame
-        app.on('update', function(dt) {
-            
-            timer += dt;
-            box.rotate(10 * dt, 20 * dt, 30 * dt);
-            box.setLocalScale(1, Math.abs(Math.sin(timer)), 1);
-        
-        }       
-        );
-        app.start();
-}) 
+}); 
 
 </script>
 <p>Accordion</p>
@@ -84,6 +34,8 @@
 <div>Test 01 of SVG - <a href="/svg/svg01">2 points one line</a></div>
 <div>Test 02 of SVG - <a href="/svg/svg02">svg line in canvas 2d</a></div>
 <div>Test 03 of SVG - <a href="/svg/svg03">get line to animate</a></div>
+<div>Test 04 of SVG - <a href="/svg/svg04">test chroma.js and gsap.js</a></div>
+<div>Test 05 of SVG - <a href="/svg/svg05">get Svelte to animate svg path</a></div>
 
 
 
