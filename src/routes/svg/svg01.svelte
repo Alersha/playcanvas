@@ -4,18 +4,23 @@
 
 <script>
     
-    /* import LeaderLine from 'leader-line-new'; */
+    import LeaderLine from 'leader-line-new';
+    /* import { browser } from '$app/env'; */
     import { onMount } from 'svelte';
     import {onDestroy} from 'svelte';
     
-    
+    /* if (browser) {
+       let line1 = new LeaderLine(start, end);
+    } */
     let line1;
-    /* onMount(() => {
-        
-        line1 = new LeaderLine(start, end);
+
+    onMount(/* async */ () => {
+       /* const LeaderLine = await import('leader-line-new').default;  */
+
+      line1 = new LeaderLine(start, end);
         
     });
-    onDestroy(
+    /* onDestroy(
         () => {
             document.location.reload();
         }
