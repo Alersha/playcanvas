@@ -67,7 +67,7 @@
         
     </div>
 <div>
-    <img src="/logocreatiza.png" width="300" height="300" alt=""/>
+    <img src="/logocreatiza.png" width="100" height="60" alt=""/>
     
 </div>
 
