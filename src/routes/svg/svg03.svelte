@@ -1,4 +1,5 @@
 <script>
+    import { gsap } from 'gsap';
     import { onMount } from 'svelte';
     
 
