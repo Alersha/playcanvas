@@ -34,25 +34,29 @@
        /* const LeaderLine = await import('leader-line-new').default;  */
 
       line1 = new LeaderLine(start, end);
-        
-    });
-    /* onDestroy(
+
+      
+     /*  return document.location.reload(); */
+});
+/* onDestroy(
         () => {
             document.location.reload();
         }
-    ); */
+    ); */ 
     
 </script>
 
-
+<svelte:head>
+    <script src="/js/leader-line.min.js"></script>
+</svelte:head>
 
 <!-- <div><button bind:this={start}>Element-1</button></div>
 <div>1111111111111111111111111 33333333333 <button bind:this={end}>Element-2</button></div> -->
 <div>
-    <p>Test 01 Leader-Line</p>
+    <p> Test 01  Leader-Line</p>
     <div>
         <div><button id="start">Element-1</button></div>
-        <div>1111111111111111111111111 33333333333 <button id="end">Element-2</button></div>
+        <div>11111111111111111111111111 3333333333333333333 <button id="end">Element-2</button></div>
     </div>
 </div>
 
