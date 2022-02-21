@@ -1,4 +1,5 @@
 <script>
+    import { gsap } from 'gsap';
     import { onMount } from 'svelte';
     
     let d;
@@ -59,12 +60,9 @@ generatePoints();
 });
 </script>
 
-<svelte:head>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-</svelte:head>
 
-    <p>Let's start Test</p>
+
+    <p>Let's start Test 04 . проблема вызова chroma and gsap, ищем решение вызова через модуль, здесь пока cdn</p>
 
     <svg viewBox="0 0 476.5 103.1">
         <path d="M47.2,90.8V19.4h23.9l5.8,1.8l6.3,3.2l4.6,7.1v6.1l-1,6.8l-4.3,6l-5.3,3.3l-8.6,2H47.5h20.4

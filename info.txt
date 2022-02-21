@@ -1,0 +1,9 @@
+leader-line оставляет в памяти обьект svg
+
+одно из решений
+
+onDestroy(
+        () => {
+            document.location.reload();
+        }
+    );

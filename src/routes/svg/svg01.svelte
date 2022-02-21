@@ -1,15 +1,30 @@
-<script>
-    import { onMount } from 'svelte';
+<!-- <script context="module">
+    
+</script> -->
 
+<script>
+    
+    import LeaderLine from 'leader-line-new';
+    import { onMount } from 'svelte';
+    import {onDestroy} from 'svelte';
+    
+    
+    let line1;
     onMount(() => {
-        new LeaderLine(
-            document.getElementById('element-1'),
-            document.getElementById('element-2')
-        );
+        
+        line1 = new LeaderLine(start, end);
+        
     });
+    onDestroy(
+        () => {
+            document.location.reload();
+        }
+    );
+    
 </script>
 
 
 
-<div><button id="element-1">Element-1</button></div>
-<div>1111111111111111111111111 33333333333 <button id="element-2">Element-2</button></div>
+<div><button id="start">Element-1</button></div>
+<div>1111111111111111111111111 33333333333 <button id="end">Element-2</button></div>
+
