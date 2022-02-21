@@ -4,13 +4,13 @@
 
 <script>
     
-    import LeaderLine from 'leader-line-new';
+    /* import LeaderLine from 'leader-line-new'; */
     import { onMount } from 'svelte';
     import {onDestroy} from 'svelte';
     
     
     let line1;
-    onMount(() => {
+    /* onMount(() => {
         
         line1 = new LeaderLine(start, end);
         
@@ -19,7 +19,7 @@
         () => {
             document.location.reload();
         }
-    );
+    ); */
     
 </script>
 
